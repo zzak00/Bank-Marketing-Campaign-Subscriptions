@@ -48,3 +48,5 @@ def MI(X,y,i):
     best_subset=imp.sort_values(by='importance',ascending=False)[:i].index
     return best_subset
     
+def set_p(s,p):
+    return s[: int(p*len(s))]

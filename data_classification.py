@@ -23,7 +23,7 @@ from sklearn.svm import SVC
 from sklearn import svm
 
 def svm(X,y):
-    clf = svm.SVC()
+    clf = SVC()
     clf.fit(X, y)
     return clf
 
@@ -36,7 +36,7 @@ def DT(x,y):
     dt.fit(x, y)
     return dt
 def MLP(x,y):
-    clf = MLPClassifier(solver='adam',hidden_layer_sizes=(8,7,7),activation='relu',batch_size=32, max_iter=300).fit(X_train, y_train.values.ravel())
+    clf = MLPClassifier(solver='adam',hidden_layer_sizes=(8,7,7),activation='relu',batch_size=32, max_iter=300).fit(x, y.values.ravel())
     return clf
 def report(model,x_test,y_test):
     print(classification_report(y_test,model.predict(x_test)))
