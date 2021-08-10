@@ -11,5 +11,3 @@ The dataset has 41188 rows (instances of calls to clients) and 21 columns (varia
 
 The dataset is available on kaggle: https://www.kaggle.com/pankajbhowmik/bank-marketing-campaign-subscriptions 
 
-DataSet Provider:
-[George Spyrou](https://github.com/gpsyrou/)
